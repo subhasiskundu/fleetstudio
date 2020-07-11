@@ -1,0 +1,235 @@
+/* global styles */
+
+body {
+    background-color: #f3f3f3;
+    color: #000000;
+    font-size: 100%; 
+	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    line-height: 1.5;
+    margin: 0;
+}
+  
+ *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:600;
+	margin:10px 0;
+}
+
+a {
+    color: #cccccc;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+hr{
+	border:0;
+	border-top:1px solid #eee;
+	margin:20px 0
+}
+
+
+  /* grid styles */
+.fs-container-100 {
+    --columns: 12; /* number of columns in the grid system */    
+    max-width: 100%;
+    margin: 0 auto;
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.fs-container {
+	--columns: 12;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.fs-row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+  
+.fs-column {
+    --width: 0; /* default value */    
+    background-color: #ffffff;
+    padding: 0 15px;
+    flex-basis: calc(var(--width) / var(--columns) * 100%);
+}  
+
+.fs-col-1, .fs-col-2, .fs-col-3, .fs-col-4, .fs-col-5, .fs-col-6, 
+.fs-col-7, .fs-col-8, .fs-col-9, .fs-col-10, .fs-col-11, .fs-col-12 { --width: 12; }
+
+.fs-m-5 { margin: 5px}
+.fs-m-10 { margin: 10px }
+.fs-m-15 { margin: 15px }
+.fs-mt-0 { margin-top: 0px }
+.fs-mt-5 { margin-top: 5px }
+.fs-mt-10 { margin-top: 10px }
+.fs-mt-15 { margin-top: 15px }
+.fs-mt-30 { margin-top: 30px }
+.fs-mb-5 { margin-bottom: 5px }
+.fs-mb-10 { margin-bottom: 10px }
+.fs-mb-15 { margin-bottom: 15px }
+.fs-mb-30 { margin-bottom: 30px }
+.fs-ml-5 { margin-left: 5px }
+.fs-ml-10 { margin-left: 10px }
+.fs-ml-15 { margin-left: 15px }
+.fs-mr-5 { margin-left: 5px }
+.fs-mr-10 { margin-left: 10px }
+.fs-mr-15 { margin-left: 15px }
+
+.fs-px-0 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.fs-py-50 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.fs-p-5 {
+	padding: 5px;
+}
+.fs-p-10 {
+	padding: 10px;
+}
+.fs-p-15 {
+	padding: 15px;
+}
+.fs-pt-45 {
+	padding-top: 45px;
+}
+.fs-px-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.fs-px-15 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.fs-card {
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.1);
+}
+.fs-card-img {
+	min-height: 175px;
+	background-color: #c4c4c4;
+}
+.fs-card-body {
+	padding: 5px 15px;
+}
+
+.fs-border-0 {
+	border: 0;
+}
+.fs-border-bottom {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.fs-border-top {
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.fs-text-right {
+	text-align: right;
+}
+.fs-text-left {
+	text-align: left;
+}
+.fs-text-center {
+	text-align: center;
+}
+.fs-text-justify {
+	text-align: justify;
+}
+.fs-bg-white {
+	background: #ffffff;
+}
+.fs-bg-loght-gray {
+	background: #f7f7f9;
+}
+
+.fs-p-0 {
+	padding: 0;
+}
+.fs-m-0 {
+	margin: 0;
+}
+
+.fs-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+}
+.fs-btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.fs-btn-primary {
+    color: #000;
+    background-color: #ffffff;
+    border-color: #888;
+}
+.fs-btn:focus, .btn:hover {
+    text-decoration: none;
+}
+
+
+@media only screen and  (min-width:992px) {
+	.fs-col-1 { --width: 1; }
+	.fs-col-2 { --width: 2; }
+	.fs-col-3 { --width: 3; }
+	.fs-col-4 { --width: 4; }
+	.fs-col-5 { --width: 5; }
+	.fs-col-6 { --width: 6; }
+	.fs-col-7 { --width: 7; }
+	.fs-col-8 { --width: 8; }
+	.fs-col-9 { --width: 9; }
+	.fs-col-10 { --width: 10; }
+	.fs-col-11 { --width: 11; }
+	.fs-col-12 { --width: 12; }
+
+	.fs-sidebar {
+		border-right: 1px solid rgba(0,0,0,.1);
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.fs-container {
+		max-width: 1140px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.fs-sm-text-center {
+		text-align: center;
+	}
+	.fs-sm-p-0 {
+		padding: 0;
+	}
+}

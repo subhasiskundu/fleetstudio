@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Fleet Studio</title>
+</head>
+
+<body>
+    <header class="fs-header fs-container-100 fs-p-15 fs-bg-white">
+        <!-- <div class="fs-header-logo">
+            
+        </div> -->
+        <ul id="fsMenu" class="fsnav">
+            <li>
+                <a class="page-scroll logo" href="#home">
+                    <img src="images/logo.png" alt="logo" /></a>
+                </li>
+            <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a class="page-scroll" href="#services">Services</a></li>
+            <li><a class="page-scroll" href="#whyus">Why Us? </a></li>
+            <li><a class="page-scroll" href="#knowmore">Know More</a></li>
+        </ul>
+        <button id="fshmbgr" class="fs-nav-btn" onclick="navClick()">
+            <div class="fs-ham">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </button>
+    </header>
+    <div class="fs-container-100">
+        <div class="fs-row">
+            <!-- *********************************Carousel************************************* -->
+            <div id="home" class="fs-container-100 fs-border-bottom">
+            <div class="fs-row">
+            <div class="fs-column fs-col-12 fs-p-0">
+                <div class="slideshow-container">                    
+                    <div class="mySlides fade">
+                        <div class="text">
+                            <h1>Slider Title 1</h1>
+                            <p>Subtitle 1</p>
+                        </div>
+                    </div>
+                        
+                    <div class="mySlides fade">
+                        <div class="text">
+                            <h1>Slider Title 2</h1>
+                            <p>Subtitle 2</p>
+                        </div>
+                    </div>
+                        
+                    <div class="mySlides fade">
+                        <div class="text">
+                            <h1>Slider Title 3</h1>
+                            <p>Subtitle 3</p>
+                        </div>
+                    </div>                
+                    <div class="carousel-indicators fs-text-center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                        
+                </div> 
+            </div>
+            </div>
+            </div>
+            <!-- ***********************************Carousel End******************************* -->
+
+            <main class="fs-column fs-col-8 fs-right-order fs-sm-p-0">
+                    <!-- ****************************************About Us Container**************************************** -->
+                    <div id="about" class="fs-container fs-mb-30">
+                            <h2 class="fs-text-left fs-sm-text-center fs-pt-45">About Us</h2>
+                            <div class="fs-row">
+                                <div class="fs-column fs-col-4 fs-mb-15 fs-sm-p-0">
+                                    <div class="fs-img-container">
+                                        <img src="images/dummy-img.png" alt="dummy img" />
+                                    </div>
+                                </div>
+                                <div class="fs-column fs-col-8">
+                                    <p class="fs-text-justify fs-m-0">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- **********************************Service Container********************************************** -->
+                    <div id="services" class="fs-container fs-mb-30">
+                            <h2 class="fs-text-right fs-sm-text-center fs-pt-45">Our Service</h2>
+                        <div class="fs-row">
+                            <div class="fs-column fs-col-4 fs-mb-15">
+                                    <div class="fs-card">
+                                        <div class="fs-card-img">
+                                           <img src="images/dummy-img.png" alt="dummy img" />
+                                        </div>
+                                        <div class="fs-card-body">
+                                            <h3>Service 1</h3>
+                                            <p class="fs-text-right">
+                                                <a href="#">Know More</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="fs-column fs-col-4 fs-mb-15">
+                                    <div class="fs-card">
+                                        <div class="fs-card-img">                                        
+                                            <img src="images/dummy-img.png" alt="dummy img" />
+                                        </div>
+                                        <div class="fs-card-body">
+                                            <h3>Service 2</h3>
+                                            <p class="fs-text-right">
+                                                <a href="#">Know More</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="fs-column fs-col-4  fs-mb-15">
+                                    <div class="fs-card">
+                                        <div class="fs-card-img">
+                                            <img src="images/dummy-img.png" alt="dummy img" />
+                                        </div>
+                                        <div class="fs-card-body">
+                                            <h3>Service 3</h3>                                      
+                                            <p class="fs-text-right">
+                                                <a href="#">Know More</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ****************************************Why Choose Us Container**************************************** -->
+                    <div id="whyus" class="fs-container">
+                            <h2 class="fs-text-center fs-pt-45">Why Choose Us ?</h2>
+                            <div class="fs-row">
+                                <div class="fs-column fs-col-12 fs-mb-30">
+                                        <div class="fs-card">
+                                            <div class="fs-card-img">
+                                               <img src="images/dummy-img.png" alt="dummy img" />
+                                            </div>
+                                            <div class="fs-card-body">
+                                                <p class="fs-text-justify">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                </p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                </main>
+
+            <aside class="fs-sidebar fs-column fs-col-4 fs-px-0 fs-bg-loght-gray fs-left-order">
+                <h2 class="fs-p-15 fs-sm-text-center">Sidebar Title</h2>
+
+                <div class="fs-card fs-p-0 fs-border-0 fs-mb-15">
+                    <div class="fs-card-img fs-mb-15">
+                        <img src="images/dummy-img.png" alt="dummy img" />
+                    </div>
+                    <div class="fs-card-body">
+                        <p class="fs-text-justify fs-m-0 fs-px-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,  but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                </div>
+
+                <div class="social-container">
+                    <ul>
+                        <li class="fs-border-top">
+                            <div class="social-block">
+                                <div class="icon">
+                                    <img src="./images/fb.png" alt="Rail Freight">
+                                </div>
+                                <div class="social-body fs-text-right">
+                                    <h4>Facebook</h3>
+                                    <p>12.3 MN FOLLOWERS</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fs-border-top">
+                            <div class="social-block">
+                                <div class="icon">
+                                    <img src="./images/instagram.png" alt="Rail Freight">
+                                </div>
+                                <div class="social-body fs-text-right">
+                                    <h4>Instagram</h3>
+                                    <p>1.2 MN FOLLOWERS</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fs-border-top fs-border-bottom">
+                            <div class="social-block">
+                                <div class="icon">
+                                    <img src="./images/twitter.png" alt="Rail Freight">
+                                </div>
+                                <div class="social-body fs-text-right">
+                                    <h4>Twitter</h3>
+                                    <p>5.8 MN FOLLOWERS</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+            
+        </div>
+    </div>
+    <div id="knowmore" class="fs-container-100 fs-bg-loght-gray fs-hero-container fs-border-top fs-p-0">
+        <div class="fs-hero-img">
+            <img src="images/dummy-img.png" alt="dummy img" />
+         </div>
+         <div class="fs-hero-text">
+            <h2>Hero Title</h2>
+            <p class="fs-mt-0 fs-mb-15">Description</p>
+            <button class="fs-btn fs-btn-primary">BUTTON</button>
+        </div>
+    </div>
+    <footer class="fs-footer fs-container-100 fs-py-50 fs-bg-white fs-text-center">
+        <div class="fs-footer-logo fs-mt-30">
+            <a href="#"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+        <div class="fs-footer-link fs-mt-30">
+            <ul>
+                <li><a class="page-scroll" href="#about">About</a></li>
+                <li><a class="page-scroll" href="#services">Services</a></li>
+                <li><a class="page-scroll" href="#whyus">Why Us? </a></li>
+                <li><a class="page-scroll" href="#knowmore">Know More</a></li>
+            </ul>
+        </div>
+        <p class="fs-mt-30">
+            Copyright © 2020 Company. | 
+            <span><a href="#">Privecy Policy</a></span> |
+            <span><a href="#">Terms & Conditions</a></span>
+        </p>
+    </footer>
+    <script src="./scripts/jquery-1.12.4.min.js"></script>
+    <script src="./scripts/jquery.easing.min.js"></script>
+    <script src="./scripts/scrolling-nav.js"></script>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+
+.fs-img-container {
+    background: #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;    
+    min-height: 250px;
+}
+
+.fs-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow-container {
+    height: 450px;
+}
+
+.fs-hero-container {
+    position: relative;
+    min-height: 300px;
+}
+.fs-hero-container .fs-hero-text {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+.fs-hero-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.fs-footer-logo {
+    display: inline-block;
+}
+.fs-footer p, .fs-footer p a {
+    color: #cccccc;
+    font-size: 0.8rem;
+}
+
+.fs-footer-link ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+    display: inline-block;
+}
+
+.fs-footer-link li {
+    display: inline;
+  }
+  .fs-footer-link li a {
+      padding: 10px 25px;
+      font-size: 1.2rem;
+  }
+
+
+.social-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-container ul li .icon {
+    width: 55px;
+}
+
+.social-container ul li .social-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 15px 30px;
+}
+
+
+.social-container ul li .social-block .icon img {
+    width: 100%;
+}
+
+.social-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.social-body h4, .social-body p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.fs-sidebar .fs-card-img {
+    min-height: 275px;
+}
+
+@media only screen and (min-width:992px) {
+    .fs-right-order {
+        order: 2
+    }
+    .fs-left-order {
+        order: 1
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .fs-hero-container .fs-hero-text {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding: 60px 15px;
+        z-index: 1;
+        left: 0;
+    }
+
+    .fs-footer-link li {
+        display: inline-block;
+        width: 45%;        
+        margin-bottom: 20px;
+    
+    }
+}
