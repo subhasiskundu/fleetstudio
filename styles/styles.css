@@ -134,7 +134,11 @@
     .fs-footer-link li {
         display: inline-block;
         width: 45%;        
-        margin-bottom: 20px;
-    
+        margin-bottom: 20px;    
+    }
+
+    .why-us .fs-card {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
