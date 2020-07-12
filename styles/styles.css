@@ -20,7 +20,6 @@
 }
 
 .slideshow-container {
-    height: 450px;
     overflow: hidden;
 }
 
@@ -153,6 +152,10 @@
     .fs-main {
         margin-left: auto!important;
     }
+
+    .slideshow-container {
+        max-height: 450px;
+    }
    
 }
 
@@ -179,7 +182,7 @@
     }
 
     .slideshow-container {
-        height: 295px;
+        min-height: 185px;
         margin-top: 80px;
     }
 }
