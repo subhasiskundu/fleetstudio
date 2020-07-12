@@ -94,6 +94,9 @@ hr{
 .fs-mr-10 { margin-left: 10px }
 .fs-mr-15 { margin-left: 15px }
 
+
+.fs-pb-15 { padding-bottom: 15px }
+
 .fs-px-0 {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -130,6 +133,11 @@ hr{
 .fs-card-img {
 	min-height: 175px;
 	background-color: #c4c4c4;
+}
+
+.fs-card-img img {
+    flex-shrink: 0;
+    width: 100%;
 }
 .fs-card-body {
 	padding: 5px 15px;

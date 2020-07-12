@@ -1,33 +1,25 @@
 
 //===== Carousel
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 0;
+showSlides();
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("fs-slide");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000);
 }
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
 
 //===== Nav Bar
 
@@ -47,16 +39,28 @@ function navClick() {
     }
 }
 
-//===== Sticky
+//===== Sticky Header
 
 $(window).on('scroll', function (event) {
     var scroll = $(window).scrollTop();
     if (scroll < 20) {
         $(".fs-header").removeClass("sticky");
-        // $(".navbar-area img").attr("src", "assets/images/logo.svg");
     } else {
         $(".fs-header").addClass("sticky");
-        // $(".navbar-area img").attr("src", "assets/images/logo-2.svg");
+    }
+});
+
+
+//===== StickySidebar
+
+$(window).on('scroll', function (event) {
+    var scroll = $(window).scrollTop();
+    if (scroll < 400) {
+        $(".fs-sidebar").removeClass("stickysidebar");
+    } else if (scroll > 840) {
+        $(".fs-sidebar").removeClass("stickysidebar");
+    } else {
+        $(".fs-sidebar").addClass("stickysidebar");
     }
 });
 
@@ -64,7 +68,6 @@ $(window).on('scroll', function (event) {
 //===== Section Menu Active
 
 var scrollLink = $('.page-scroll');
-// Active link switching
 $(window).scroll(function () {
     var scrollbarLocation = $(this).scrollTop();
 

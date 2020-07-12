@@ -5,7 +5,12 @@
     align-items: center;
     justify-content: center;
     height: 100%;    
-    min-height: 250px;
+    min-height: 175px;
+}
+
+.fs-img-container img {
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .fs-card-img {
@@ -16,6 +21,7 @@
 
 .slideshow-container {
     height: 450px;
+    overflow: hidden;
 }
 
 .fs-hero-container {
@@ -72,7 +78,7 @@
 }
 
 .social-container ul li .icon {
-    width: 55px;
+    width: 45px;
 }
 
 .social-container ul li .social-block {
@@ -82,7 +88,7 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 15px 30px;
+    padding: 10px 30px;
 }
 
 
@@ -111,6 +117,21 @@
     margin-right: -15px;
 }
 
+.fs-hero-container {
+    background-image: url("../images/parallax.png"); 
+    height: 400px;  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.why-us .fs-card .fs-card-img {
+    max-height: 225px;
+    overflow: hidden;
+}
+
 @media only screen and (min-width:992px) {
     .fs-right-order {
         order: 2
@@ -118,6 +139,21 @@
     .fs-left-order {
         order: 1
     }
+
+    .fs-header {
+        min-height: 70px;
+    }
+
+    .fs-sidebar.stickysidebar {
+        position: fixed;
+        z-index: 99;
+        width: 33.33%;
+        top:70px;
+    }
+    .fs-main {
+        margin-left: auto!important;
+    }
+   
 }
 
 
@@ -140,5 +176,10 @@
     .why-us .fs-card {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .slideshow-container {
+        height: 295px;
+        margin-top: 80px;
     }
 }
